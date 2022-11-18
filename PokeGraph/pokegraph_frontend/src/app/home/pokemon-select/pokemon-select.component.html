@@ -1,0 +1,52 @@
+<form class="form mt-4" [formGroup]="pokemonForm" (ngSubmit)="battle()" >
+  <div class="form-group">
+  <div class="row">
+      <div class="column">
+        <h4>Select your Pokemon</h4>
+        <div *ngIf="imageSourceSelf" style="text-align: center;">
+          <img class="img-responsive" style="width:250px; height:250px" [src]="imageSourceSelf">
+        </div>
+        <div>
+          <div style="text-align: center;">
+            <mat-form-field appearance="fill">
+              <mat-label>Pokemon 1</mat-label>
+              <mat-select class="form-control" (selectionChange)="loadPokemonSelf($event)" formControlName="firstPokemon">
+                <mat-option *ngFor="let option of options" [value]="option">
+                  {{option.name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+    <div class="column">
+      <div style="text-align: center;">
+          <mat-icon>close</mat-icon>
+      </div>
+    </div>
+    </div>
+    <div class="column">
+      <h4>Select your Pokemon</h4>
+      <div *ngIf="imageSourceOther" style="text-align: center;">
+        <img class="img-responsive" style="width:250px; height:250px" [src]="imageSourceOther">
+      </div>
+      <div>
+        <div style="text-align: center;">
+        <mat-form-field appearance="fill">
+          <mat-label>Pokemon 2</mat-label>
+          <mat-select class="form-control" (selectionChange)="loadPokemonOther($event)" formControlName="secondPokemon">
+            <mat-option *ngFor="let option of options" [value]="option">
+              {{option.name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        </div>
+      </div>
+    </div>
+    <div  style="text-align: center;">
+      <button type="submit" mat-flat-button color="primary">
+        Go!
+      </button>
+    </div>
+  </div>
+</form>
