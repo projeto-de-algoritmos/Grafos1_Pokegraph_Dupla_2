@@ -1,0 +1,32 @@
+.close {
+  border: transparent;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+}
+
+.titulo{
+  padding-top: 25px;
+  font-size: medium;
+  text-align: center;
+}
+.name{
+  font-size: 3em;
+  color: yellow;
+  -webkit-text-stroke: 1px blue;
+  text-align: center;
+  position: relative;
+  top: -30px;
+}
+
+.imagem{
+  position: relative;
+  top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+

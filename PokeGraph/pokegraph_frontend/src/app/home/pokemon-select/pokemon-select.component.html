@@ -1,52 +1,54 @@
 <form class="form mt-4" [formGroup]="pokemonForm" (ngSubmit)="battle()" >
   <div class="form-group">
-  <div class="row">
+    <div class="row" style="overflow:auto;">
       <div class="column">
-        <h4>Select your Pokemon</h4>
-        <div *ngIf="imageSourceSelf" style="text-align: center;">
-          <img class="img-responsive" style="width:250px; height:250px" [src]="imageSourceSelf">
+        <h4 class="battle-text">Select your Pokemon</h4>
+        <div style="text-align: center;">
+          <img *ngIf="firstPokemon !== null" class="img-responsive" style="width:220px; :220px;" [src]="imageSourceSelf">
+          <img *ngIf="firstPokemon === null" class="question-mark" style="width:220px; :220px" src="/assets/blackQuestionMark.png">
         </div>
         <div>
           <div style="text-align: center;">
             <mat-form-field appearance="fill">
-              <mat-label>Pokemon 1</mat-label>
-              <mat-select class="form-control" (selectionChange)="loadPokemonSelf($event)" formControlName="firstPokemon">
+              <mat-select placeholder="Selecione" class="form-control" (selectionChange)="loadPokemonSelf($event)">
                 <mat-option *ngFor="let option of options" [value]="option">
                   {{option.name}}
+                  <img class="img-responsive" style="width:30px; height:30px;position: absolute; right: 0" src="{{option.url}}">
                 </mat-option>
               </mat-select>
             </mat-form-field>
           </div>
         </div>
       </div>
-    <div class="column">
-      <div style="text-align: center;">
-          <mat-icon>close</mat-icon>
+      <div class="column">
+        <div style="text-align: center; margin-top: 160px">
+            <mat-icon class="battle-symbol">close</mat-icon>
+        </div>
       </div>
-    </div>
-    </div>
     <div class="column">
-      <h4>Select your Pokemon</h4>
-      <div *ngIf="imageSourceOther" style="text-align: center;">
-        <img class="img-responsive" style="width:250px; height:250px" [src]="imageSourceOther">
+      <h4 class="battle-text">Select enemy Pokemon</h4>
+      <div style="text-align: center;">
+        <img *ngIf="secondPokemon !== null" class="img-responsive" style="width:220px; :220px" [src]="imageSourceOther">
+        <img *ngIf="secondPokemon === null" class="question-mark" style="width:220px; :220px" src="/assets/blackQuestionMark.png">
       </div>
       <div>
         <div style="text-align: center;">
         <mat-form-field appearance="fill">
-          <mat-label>Pokemon 2</mat-label>
-          <mat-select class="form-control" (selectionChange)="loadPokemonOther($event)" formControlName="secondPokemon">
+          <mat-select placeholder="Selecione" class="form-control" (selectionChange)="loadPokemonOther($event)">
             <mat-option *ngFor="let option of options" [value]="option">
               {{option.name}}
+              <img class="img-responsive" style="width:30px; height:30px;position: absolute; right: 0" src="{{option.url}}">
             </mat-option>
           </mat-select>
         </mat-form-field>
         </div>
       </div>
     </div>
-    <div  style="text-align: center;">
+    </div>
+    </div>
+    <div class="row"  style="text-align: center;">
       <button type="submit" mat-flat-button color="primary">
         Go!
       </button>
-    </div>
   </div>
 </form>
