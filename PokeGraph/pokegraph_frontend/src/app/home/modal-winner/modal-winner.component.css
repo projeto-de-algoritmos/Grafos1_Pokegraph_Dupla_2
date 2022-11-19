@@ -9,13 +9,15 @@
 
 .titulo{
   padding-top: 25px;
-  font-size: medium;
+  color: yellow;
+  -webkit-text-stroke: 1px blue;
+  font-size: 1.5em;
   text-align: center;
 }
 .name{
   font-size: 3em;
   color: yellow;
-  -webkit-text-stroke: 1px blue;
+  -webkit-text-stroke: 2px blue;
   text-align: center;
   position: relative;
   top: -30px;
