@@ -1,3 +1,7 @@
+img{
+  margin-bottom: 10px;
+}
+
 .column {
   float: left;
   width: 33.33%;
@@ -5,6 +9,8 @@
 
 h4 {
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 8px;
 }
 
 .vertical-center {
@@ -14,6 +20,22 @@ h4 {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.question-mark{
+  opacity: 30%;
+}
+
+.battle-symbol{
+  height: auto;
+  width: auto;
+  font-size: 150px;
+}
+
+.battle-text{
+  font-size: xx-large;
+  color: yellow;
+  -webkit-text-stroke: 1px blue;
 }
 
 
