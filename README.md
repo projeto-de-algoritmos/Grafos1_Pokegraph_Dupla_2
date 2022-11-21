@@ -45,4 +45,5 @@ segue o link para o [Repositório Antigo](https://github.com/yandrade1305/grafos
 
 ### Download Apresentação
 
-Segue o Link para download da [Apresentação do projeto](assets-readme/apresentacao-pokegraph.mp4)
+Segue o Link para download da [Apresentação do projeto](assets-readme/apresentacao-pokegraph.mp4)<br>
+(Para download, clique no link e clique nas opções *Download* ou *View Raw*)
