@@ -37,40 +37,40 @@ Para rodar o nosso projeto localmente, deverá ter instalado Java (versão 11), 
 
 Para rodar o backend (sem IDE) basta acessar o diretório pokegraph_backend e rodar o comando:
 
-``
+```
 mvn spring-boot:run 
-``
+```
 
 Para rodar o backend (com a IDE) instalada basta apertar o botão "▶" no método main da classe ``br.gov.incra.conflitoagrario.ConflitoAgrarioApplication``.
 
 Para rodar o frontend basta ir no diretório pokegraph_frontend e rodar o comando:
 
-``
+```
 npm i 
-``
+```
 
-Para baixar as dependências e em seguida execute o comando
+Para baixar as dependências e em seguida execute o comando:
 
-``
+```
 npm run start
-``
+```
 
-A aplicação estará disponível no endereço 
+A aplicação estará disponível no endereço:
 
-``
+```
 http://localhost:4200
-``
+```
 
 ## Uso 
-Para a utilizaçao devemos selecionar dois pokémons e em seguida apertar o botão ``"Go!"``.
+Para a utilizaçao devemos selecionar dois pokémons e em seguida apertar o botão: ``"Go!"``.
 
 ## Outros 
 
 ### Link Repositório Antigo
 Em vista de problemas na criação do git-hub na organização da disciplina,
-segue o link para o [Repositório Antigo](https://github.com/yandrade1305/grafos1_pokegraph)
+segue o link para o [Repositório Antigo](https://github.com/yandrade1305/grafos1_pokegraph).
 
 ### Download Apresentação
 
-Segue o Link para download da [Apresentação do projeto](assets-readme/apresentacao-pokegraph.mp4)<br>
+Segue o Link para download da [Apresentação do projeto](assets-readme/apresentacao-pokegraph.mp4).<br>
 (Para download, clique no link e depois nas opções *Download* ou *View Raw*)
