@@ -10,8 +10,8 @@
 | 18/0145363 |  Yan Andrade de Sena  |
 
 ## Sobre 
-O objetido do Pokegraph é apresentar uma interface direta e simples de utilizar, que tem a função de mostrar o resultado
-da batalha entre dois Pokemons, se baseando no tipo deles. Para isso é utilizado a estrutuda de Grafos, que origina 
+O objetivo do Pokegraph é apresentar uma interface direta e simples de utilizar, que tem a função de mostrar o resultado
+da batalha entre dois Pokemons, se baseando no tipo deles. Para isso é utilizado a estrutura de Grafos, que origina 
 o nome do projeto:
 Pokegraph!
 
@@ -40,7 +40,7 @@ Explique como usar seu projeto caso haja algum passo a passo após o comando de 
 ## Outros 
 
 ### Link Repositório Antigo
-Em vista de problema na criação do git-hub na organização da disciplina,
+Em vista de problemas na criação do git-hub na organização da disciplina,
 segue o link para o [Repositório Antigo](https://github.com/yandrade1305/grafos1_pokegraph)
 
 ### Download Apresentação
