@@ -30,12 +30,39 @@ Pokegraph!
 ![Modal Vitória](assets-readme/modal-winner.jpeg) 
 
 ## Instalação 
-**Linguagem**: Java<br>
-**Framework**: Springboot<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: Java, Typescript<br>
+**Framework**: Springboot, Angular<br>
+
+Para rodar o nosso projeto localmente, deverá ter instalado Java (versão 11), Node (versão 16) e Maven(Versão 3.8). Também sugerimos a instalação de uma IDE, o Intellij, já que o mesmo facilita rodar projetos Java.
+
+Para rodar o backend (sem IDE) basta acessar o diretório pokegraph_backend e rodar o comando:
+
+``
+mvn spring-boot:run 
+``
+
+Para rodar o backend (com a IDE) instalada basta apertar o botão "▶" no método main da classe ``br.gov.incra.conflitoagrario.ConflitoAgrarioApplication``.
+
+Para rodar o frontend basta ir no diretório pokegraph_frontend e rodar o comando:
+
+``
+npm i 
+``
+
+Para baixar as dependências e em seguida execute o comando
+
+``
+npm run start
+``
+
+A aplicação estará disponível no endereço 
+
+``
+http://localhost:4200
+``
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+Para a utilizaçao devemos selecionar dois pokémons e em seguida apertar o botão ``"Go!"``.
 
 ## Outros 
 
