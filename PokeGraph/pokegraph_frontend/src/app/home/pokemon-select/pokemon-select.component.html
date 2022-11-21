@@ -10,7 +10,7 @@
         <div>
           <div style="text-align: center;">
             <mat-form-field appearance="fill">
-              <mat-select placeholder="Selecione" class="form-control" (selectionChange)="loadPokemonSelf($event)">
+              <mat-select placeholder="Select Pokemon" class="form-control" (selectionChange)="loadPokemonSelf($event)">
                 <mat-option *ngFor="let option of options" [value]="option">
                   {{option.name}}
                   <img class="img-responsive" style="width:30px; height:30px;position: absolute; right: 0" src="{{option.url}}">
@@ -34,7 +34,7 @@
       <div>
         <div style="text-align: center;">
         <mat-form-field appearance="fill">
-          <mat-select placeholder="Selecione" class="form-control" (selectionChange)="loadPokemonOther($event)">
+          <mat-select placeholder="Select Pokemon" class="form-control" (selectionChange)="loadPokemonOther($event)">
             <mat-option *ngFor="let option of options" [value]="option">
               {{option.name}}
               <img class="img-responsive" style="width:30px; height:30px;position: absolute; right: 0" src="{{option.url}}">

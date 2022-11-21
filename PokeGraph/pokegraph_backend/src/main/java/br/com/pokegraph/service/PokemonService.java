@@ -86,16 +86,6 @@ public class PokemonService {
 
             Float result8 = MatrixUtils.result(i8, j8);
 
-            System.out.println("Resultado 1:" + result1);
-            System.out.println("Resultado 2:" + result2);
-            System.out.println("Resultado 3:" + result3);
-            System.out.println("Resultado 4:" + result4);
-
-            System.out.println("Resultado 5:" + result5);
-            System.out.println("Resultado 6:" + result6);
-            System.out.println("Resultado 7:" + result7);
-            System.out.println("Resultado 8:" + result8);
-
             Float resultado = result1 + result2 + result3 + result4;
             Float resultado2 = result5 + result6 + result7 + result8;
 
@@ -104,8 +94,6 @@ public class PokemonService {
             } else {
                 winnerPokemon = new PokemonDTO(secondPokemon.get());
             }
-            System.out.println("Resultado 1 total:" + resultado);
-            System.out.println("Resultado 2 total:" + resultado2);
 
         } else {
             throw new NoExistentPokemonException("Não existe pokêmon's cadastrados para esse id: " + firstPokemon);
